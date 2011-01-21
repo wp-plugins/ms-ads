@@ -2,7 +2,7 @@
 /*
 Plugin Name: تبلیغات وبلاگ
 Plugin URI: http://www.php-press.com/
-Version: 1.0.1
+Version: 1.1
 Description: Persian Advertisement Plugin
 Author: Moeini
 Author URI: http://www.php-press.com/

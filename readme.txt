@@ -2,7 +2,7 @@
 Contributors: MS ADS (Multi Site Advertisement)
 Donate link: http://php-press.com/
 Tags: MS, MU, ADS, Advertisement
-Requires at least: 0.9.1
+Requires at least: 1.1
 
 With This Plugin You Can Add Your Advertisement In Wordpress Network Blogs
 
