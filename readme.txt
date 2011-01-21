@@ -16,21 +16,23 @@ Also You Can Manage Plugin & Banners In Admin Page .
 *	Manage Number Of Banner View.
 *	Plugin Themes.
 
-This plug-in is now part of [PHP-Press Projects](http://php-press.com/ "This plug-in is now part of [Persian Wordpress Project](http://wp-persian.com/ "مرجع فارسی وردپرس و پی اچ پی").").
+This plug-in is now part of [PHP-Press Projects](http://php-press.com/ "مرجع فارسی وردپرس و پی اچ پی").
 
 == Installation ==
 
 1. If You are Using Signle User WordPress (No Network) You Can`t Use This Plugin.
 2. Extract the downloaded archive into `ms-ads` folder.
-3. Upload `advertisement.php`, `options.js`, `themes` to the `/wp-content/mu-plugins/` directory of your wordpress installation.
+3. Upload `advertisement.php`, `options.js`, `ms-ads-themes/` to the `/wp-content/mu-plugins/` directory of your wordpress installation.
 
 == Frequently Asked Questions ==
+
 if you are problem :
-1.open `advertisement.php` with notepad 
-2.on line 11 remove firs `// ` from constant
-3.add table_prefix (on wp-config.php file) for constant value
-for example:
-define('_TABLE_PREFIX','r235__');
+
+*	open `advertisement.php` with notepad 
+*	on line 11 remove firs `// ` from constant
+*	add table_prefix (on wp-config.php file) for constant value
+*	for example:
+	define('_TABLE_PREFIX','r235__');
 
 سوالات خود را در [انجمن پی‌اچ‌پی پرس](http://forum.php-press.com/) مطرح نمایید.
 
