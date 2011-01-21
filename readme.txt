@@ -24,7 +24,7 @@ Also You Can Manage Plugin & Banners In Admin Page .
 
 == Frequently Asked Questions ==
 
-if you are problem :
+if you have problem :
 
 *	open `advertisement.php` with notepad 
 *	on line 11 remove firs `// ` from constant
