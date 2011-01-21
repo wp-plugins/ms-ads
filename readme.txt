@@ -16,8 +16,6 @@ Also You Can Manage Plugin & Banners In Admin Page .
 *	Manage Number Of Banner View.
 *	Plugin Themes.
 
-This plug-in is now part of [PHP-Press Projects](http://php-press.com/ "مرجع فارسی وردپرس و پی اچ پی").
-
 == Installation ==
 
 1. If You are Using Signle User WordPress (No Network) You Can`t Use This Plugin.
