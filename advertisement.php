@@ -2,16 +2,13 @@
 /*
 Plugin Name: تبلیغات وبلاگ
 Plugin URI: http://www.php-press.com/
-Version: 1.1
+Version: 1.0.1
 Description: Persian Advertisement Plugin
 Author: Moeini
 Author URI: http://www.php-press.com/
 */
 
 // define('_TABLE_PREFIX','');
-	
-$pos = strrpos(dirname(__FILE__),DIRECTORY_SEPARATOR);
-define('MS_ADS_FOLDER',substr(dirname(__FILE__),$pos+1));
 
 function ms_ads_get_op(){
 	global $table_prefix;
@@ -65,7 +62,7 @@ function show_ads(){
 	{
 		$id = mt_rand();
 		$banner_id = select_ads($options['banner']);
-		$theme = ABSPATH.'wp-content/plugins/'.MS_ADS_FOLDER.'/themes/'.$options['theme'].'/main.html';
+		$theme = ABSPATH.'wp-content/mu-plugins/ms-ads-themes/'.$options['theme'].'/main.html';
 		$main = fopen($theme, 'r');		$main = fread($main, filesize($theme));
 		$main = str_replace(array('{id}','{link}','{banner}'),array($id,$options['banner'][$banner_id]['href'],$options['banner'][$banner_id]['src']),$main);
 		echo $main;
@@ -99,7 +96,7 @@ function ads_config(){
 var index_amf_total  = <?php echo $total; ?>;
 //]]>
 </script>
-<script type="text/javascript" src="<?php echo WP_PLUGIN_URL.'/'.MS_ADS_FOLDER.'/options.js' ?>"></script>
+<script type="text/javascript" src="<?php echo substr(WP_PLUGIN_URL,0,-8).'/mu-plugins/options.js' ?>"></script>
 <div class="wrap">
 	<div id="icon-options-general" class="icon32"><br /></div>
 	<h2 style="font-family:Tahoma;font-size:20px">تنظیمات تبلیغات</h2>
@@ -127,7 +124,7 @@ var index_amf_total  = <?php echo $total; ?>;
 			<label for="theme"><p><h5>پوسته</h5></p>
 				<select id="theme" name="ms-ads-theme" style="width:120px;">
 <?php
-	if ($handle = opendir(ABSPATH.'wp-content/plugins/'.MS_ADS_FOLDER.'/themes')) {
+	if ($handle = opendir(ABSPATH.'wp-content/mu-plugins/ms-ads-themes')) {
 		while (false !== ($theme = readdir($handle))) {
 			if ($theme != "." && $theme != "..") {
 				$select = '';

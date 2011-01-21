@@ -1,8 +1,9 @@
 === Plugin Name ===
-Contributors: MS ADS (Multi Site Advertisement)
+Contributors: Moeini
 Donate link: http://php-press.com/
 Tags: MS, MU, ADS, Advertisement
 Requires at least: 1.1
+Tested up to: 3.0.4
 
 With This Plugin You Can Add Your Advertisement In Wordpress Network Blogs
 
@@ -11,12 +12,19 @@ With This Plugin You Can Add Your Advertisement In Wordpress Network Blogs
 This  Is Advanced Persian Plugin To Add Advertisement In Wordpress Network Blogs .
 Also You Can Manage Plugin & Banners In Admin Page .
 
+*	Add Unlimited Banner.
+*	Manage Number Of Banner View.
+*	Plugin Themes.
+
+This plug-in is now part of [PHP-Press Projects](http://php-press.com/ "This plug-in is now part of [Persian Wordpress Project](http://wp-persian.com/ "مرجع فارسی وردپرس و پی اچ پی").").
+
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+1. If You are Using Signle User WordPress (No Network) You Can`t Use This Plugin.
+2. Extract the downloaded archive into `ms-ads` folder.
+3. Upload `advertisement.php`, `options.js`, `themes` to the `/wp-content/mu-plugins/` directory of your wordpress installation.
 
-e.g.
+== Frequently Asked Questions ==
 
-1. Upload `ms-ads` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. config plugin in respective page 
+سوالات خود را در [انجمن پی‌اچ‌پی پرس](http://forum.php-press.com/) مطرح نمایید.
+
