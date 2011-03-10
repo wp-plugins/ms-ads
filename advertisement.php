@@ -2,14 +2,14 @@
 /*
 Plugin Name: MS ADS
 Plugin URI: http://www.php-press.com/
-Version: 1.1
+Version: 1.2
 Description: Persian Advertisement Plugin
 Author: Moeini
 Author URI: http://www.php-press.com/
 */
 
 // define('_TABLE_PREFIX','');
-
+$msads_menu_seting = version_compare( $wp_version, '3.1', '>=' ) ? array('network_admin_menu','settings') : array('admin_menu','ms-admin');
 function ms_ads_get_op(){
 	global $table_prefix;
 	if(!defined('_TABLE_PREFIX')){
@@ -69,12 +69,13 @@ function show_ads(){
 	}
 }
 function ads_setting(){
-	add_submenu_page('ms-admin.php', 'تبلیغات ','‌تبلیغات ‌',7, 'ads-setting','ads_config');
+	global $msads_menu_seting;
+	add_submenu_page($msads_menu_seting[1].'.php', 'تبلیغات ','‌تبلیغات ‌',7, 'ads-setting','ads_config');
 }
 function ads_config(){
 	global $wpdb,$blogs;
-	if(is_admin() && isset($_GET['page']) && 'ads-setting' == $_GET['page']){
-		if(is_admin() && isset($_POST['submit'])){
+	if(is_super_admin() && isset($_GET['page']) && 'ads-setting' == $_GET['page']){
+		if(isset($_POST['submit'])){
 			$options['banner'] = $_POST['banner'];
 			$options['no_ads'] = $_POST['no_ads'];
 			$options['theme'] = $_POST['ms-ads-theme'];
@@ -145,6 +146,6 @@ var index_amf_total  = <?php echo $total; ?>;
 <?php
 }
 }
-add_action('admin_menu', 'ads_setting');
+add_action($msads_menu_seting[0], 'ads_setting');
 add_action('wp_head','show_ads');
 ?>
