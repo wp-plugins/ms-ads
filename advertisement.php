@@ -2,7 +2,7 @@
 /*
 Plugin Name: MS ADS
 Plugin URI: http://www.php-press.com/
-Version: 1.2
+Version: 1.2.5
 Description: Persian Advertisement Plugin
 Author: Moeini
 Author URI: http://www.php-press.com/
