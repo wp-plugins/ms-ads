@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MS-ADS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-30 14:05+0330\n"
+"PO-Revision-Date: 2011-10-30 14:05+0330\n"
+"Last-Translator: Moeini <a.moeny@g,ail.com>\n"
+"Language-Team: PHP-Press <a.moeny@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../advertisement.php:96
+msgid "Advertisement"
+msgstr "تبلیغات"
+
+#: ../advertisement.php:114
+msgid "Options updated"
+msgstr "تنظیمات به‌روز شد."
+
+#: ../advertisement.php:116
+msgid "Error updating options"
+msgstr "خطا در به روز رسانی گزینه‌ها"
+
+#: ../advertisement.php:126
+#: ../advertisement.php:143
+#: ../advertisement.php:150
+msgid "Banner URL:"
+msgstr "آدرس بنر:"
+
+#: ../advertisement.php:127
+#: ../advertisement.php:143
+#: ../advertisement.php:150
+msgid "Banner Link:"
+msgstr "لینک بنر:"
+
+#: ../advertisement.php:128
+#: ../advertisement.php:143
+#: ../advertisement.php:150
+msgid "Number of views:"
+msgstr "تعداد نمایش:"
+
+#: ../advertisement.php:129
+#: ../advertisement.php:143
+#: ../advertisement.php:150
+msgid "Percent"
+msgstr "درصد"
+
+#: ../advertisement.php:130
+#: ../advertisement.php:143
+#: ../advertisement.php:150
+msgid "Banner title:"
+msgstr "عنوان:"
+
+#: ../advertisement.php:131
+#: ../advertisement.php:143
+#: ../advertisement.php:150
+msgid "Banner Description:"
+msgstr "توضیخات بنر:"
+
+#: ../advertisement.php:132
+msgid "Remove"
+msgstr "حذف"
+
+#: ../advertisement.php:138
+msgid "Advertisement Options"
+msgstr "تنظیمات"
+
+#: ../advertisement.php:142
+msgid "Banners management"
+msgstr "مدیریت بنرها"
+
+#: ../advertisement.php:154
+msgid "Add more banner"
+msgstr "افزودن بنر بیشتر"
+
+#: ../advertisement.php:157
+msgid "Remove blogs advertising"
+msgstr "حذف تبلیغ از وبلاگ‌ها"
+
+#: ../advertisement.php:160
+msgid "Enter Blog ID and separated with (Space), like: 1 2 8"
+msgstr "ID وبلاگ را وارد کنید و با (Space) از هم تفکیک کنید، مانند : 1 2 8"
+
+#: ../advertisement.php:163
+msgid "Theme"
+msgstr "پوسته"
+
+#: ../advertisement.php:181
+msgid "Show location:"
+msgstr "مکان نمایش"
+
+#: ../advertisement.php:184
+msgid "Header"
+msgstr "سربرگ"
+
+#: ../advertisement.php:185
+msgid "Above content"
+msgstr "بالای مطالب"
+
+#: ../advertisement.php:188
+msgid "Update options &raquo;"
+msgstr "به‌روز رسانی &raquo;"
+
+#, fuzzy
+#~ msgid "Your browser does not support AJAX."
+#~ msgstr " مرورگر شما از AJAX پشتیبانی نمی کند."
