@@ -1,24 +1,3 @@
-var xmlhttp_handle   = ajax_connect();
-function ajax_connect()
-{
-	if (window.XMLHttpRequest) {
-		xmlhttp = new XMLHttpRequest();
-	} else {
-		try {
-			xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-		}
-		catch(e) {
-			try {
-				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			catch(e) {
-				alert(".پشتيباني نميکند AJAX مرورگر شمااز");
-			}
-		}
-	}
-
-	return xmlhttp;
-}
 
 function fetchElementById(id) 
 { 
@@ -42,8 +21,9 @@ function new_banner_input(upload_type)
 		var file_div = document.createElement("div");
 		
 		file_div.setAttribute("id", file_id);
-		file_div.innerHTML += 'آدرس بنر : <input name="banner['+index_amf_total+'][src]" size="76" type="text"> <br /> لينك بنر : &nbsp;&nbsp;<input name="banner['+index_amf_total+'][href]" size="50" type="text"> تعداد نمایش : <input name="banner['+index_amf_total+'][display]" size="4" type="text"> درصد';
-		file_div.innerHTML += "<input type=\"button\" class=\"button1\" onclick=\"javascript:remove_banner_input('" + file_id + "');\" style=\"height: 19px;\" value=\"حذف\" /> <p />";
+		file_div.innerHTML += ''+_Banner_URL+'<input name="banner['+index_amf_total+'][src]"  size="76" type="text" /> <br /> '+Banner_Link+' &nbsp;&nbsp;<input name="banner['+index_amf_total+'][href]" size="50" type="text" /> '+Number_of_views+'<input name="banner['+index_amf_total+'][display]" size="4" type="text" /> '+_Percent+' <br /> '+Banner_title+' &nbsp;&nbsp;<input name="banner['+index_amf_total+'][title]" size="50" type="text" /><br /> '+Banner_Description+' &nbsp;&nbsp;<input name="banner['+index_amf_total+'][description]" size="50" type="text" />';
+
+		file_div.innerHTML += "<input type=\"button\" class=\"button1\" onclick=\"javascript:remove_banner_input('" + file_id + "');\" style=\"height: 19px;\" value=\""+_Remove+"\" /> <p />";
 		
 		index_amf_total++;
 		
