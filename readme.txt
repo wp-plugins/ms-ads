@@ -2,8 +2,8 @@
 Contributors: Moeini
 Donate link: http://php-press.com/
 Tags: MS, MU, ADS, Advertisement
-Requires at least: 2.7
-Tested up to: 3.2.1
+Requires at least: 3
+Tested up to: 3.4.1
 
 With This Plugin You Can Add Your Advertisement In Wordpress Network Blogs
 
